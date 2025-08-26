@@ -23,7 +23,7 @@ curl -X POST http://127.0.0.1:8080/url/ \
   -d '{"url": "https://github.com"}'
 ```
 
-### Empty body (should now work without panic):
+### Empty body:
 ```bash
 curl -X POST http://127.0.0.1:8080/url/ \
   -H "Content-Type: application/json" \
