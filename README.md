@@ -1,5 +1,32 @@
 # URL Shortener API
 I just developed for fun (to learn concepts of web servers in golang) not tested and due to no authorization or proper seeding it's not production ready.
+
+## Running with Docker Compose
+
+### Prerequisites
+- Docker
+- Docker Compose
+
+### Quick Start
+1. Clone the repository
+2. Run the application with Redis:
+```bash
+docker-compose up --build
+```
+
+This will start:
+- The URL shortener API on port 8080
+- Redis on port 6379
+
+### Stop the services
+```bash
+docker-compose down
+```
+
+### Clean up (remove volumes)
+```bash
+docker-compose down -v
+```
 ## Usage Examples
 
 ### Basic request:
